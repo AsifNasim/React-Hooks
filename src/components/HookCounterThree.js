@@ -11,6 +11,7 @@ function HookCounterThree() {
         <div>
             <input type ="text" 
             value = {name.firstName}
+            // the spread operator here preserve the value with the override changes
             onChange = {e => setName({...name, firstName:e.target.value})} 
             />
             <input type ="text" 
